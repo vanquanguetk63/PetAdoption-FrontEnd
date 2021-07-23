@@ -1,4 +1,9 @@
 .custom-header {
   height: 100px;
-  background-color: red;
+  background: #f4f4f4;
+  box-shadow: 0 -2px 12px rgb(0 0 0 / 7%);
+}
+
+.custom-header .logo {
+  padding: 12px 0px;
 }
