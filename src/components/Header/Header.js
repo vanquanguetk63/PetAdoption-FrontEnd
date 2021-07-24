@@ -6,22 +6,31 @@ import { Row, Container, Col, Navbar, Nav } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Container fluid className="custom-header">
-      <Container>
-        <Row>
+    <Container fluid className="custom-header fixed-top">
+      <Container className="h-100">
+        <Row className="custom-header-row justify-content-between h-100 align-items-center">
           <Col lg={3} className="logo">
             <Image fluid src={logo} />
           </Col>
           <Col lg={8}>
-            <Nav className="custom-header-nav">
+            <Nav className="custom-header-nav" defaultActiveKey="/home">
               <Nav.Item>
-                <Nav.Link href="/home">Active</Nav.Link>
+                <Nav.Link href="/home">Trang chủ</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-1">Link</Nav.Link>
+                <Nav.Link href="/adopt">Nhận nuôi</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="link-2">Link</Nav.Link>
+                <Nav.Link>Ủng hộ</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>Tin tức</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>Sản phẩm</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link>Liên hệ</Nav.Link>
               </Nav.Item>
             </Nav>
           </Col>

@@ -1,9 +1,23 @@
 .custom-header {
-  height: 100px;
   background: #f4f4f4;
   box-shadow: 0 -2px 12px rgb(0 0 0 / 7%);
+  height: 100px;
 }
 
-.custom-header .logo {
-  padding: 12px 0px;
+.custom-header .logo img {
+  max-height: 60px;
+}
+
+.custom-header .custom-header-nav > .nav-item:hover {
+  color: #d61c62;
+}
+
+.custom-header .custom-header-nav > .nav-item > a {
+  color: #222222;
+  font-weight: bold;
+}
+
+.custom-header .custom-header-nav > .nav-item > a:hover,
+.custom-header .custom-header-nav > .nav-item .active {
+  color: #d61c62;
 }
