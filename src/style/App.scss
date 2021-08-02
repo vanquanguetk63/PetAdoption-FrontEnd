@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+@import "~bootstrap/scss/bootstrap";
+//Utility
+@import "./reset";
+@import "./variables";
+
+//component
+@import "./header";
+
+//footer
+@import "./footer";
+//home
+@import "./Home/donate_now";
+@import "./Home/Infor/infor";
+@import "./Home/Infor/information";
+
+//donate
+@import "./Donate/donater_list";
