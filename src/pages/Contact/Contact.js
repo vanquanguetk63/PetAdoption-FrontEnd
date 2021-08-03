@@ -1,22 +1,20 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
+import DonaterList from "../../components/Donate/DonaterList";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
-import DonateNow from "../../components/Home/DonateNow";
-import Information from "../../components/Home/Infor/Information";
 
-const Home = () => {
+const Contact = () => {
     return (
         <Container fluid>
             <Row>
                 <Header />
-                <Information />
-                <DonateNow />
+                <DonaterList />
                 <Footer />
             </Row>
         </Container>
     );
 };
 
-export default Home;
+export default Contact;

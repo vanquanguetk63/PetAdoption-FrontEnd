@@ -1,0 +1,63 @@
+.overlay {
+    box-shadow: inset 0 0 0 1000px rgb(41 41 41 / 42%);
+}
+.donate-now {
+    background-image: url(https://hanoipetadoption.com/Images/ready-to-support.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    width: 100%;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .text-donate {
+            color: #f4f4f4;
+            font-size: 30px;
+            animation-name: InLeft;
+            animation-duration: 1s;
+        }
+        .button-donate {
+            transition: all 0.2s ease-in-out;
+            color: #fff !important;
+            border: 0;
+            font-size: 1rem;
+            padding: 10px 50px;
+            outline: none;
+            letter-spacing: 0.2px;
+            font-family: "Montserrat", sans-serif;
+            border-radius: 25px;
+            text-transform: uppercase;
+            margin-top: 15px;
+            white-space: normal;
+            font-weight: bold;
+            background: #018ae0;
+            animation-name: InRight;
+            animation-duration: 1s;
+        }
+        .button-donate:hover{
+            background: #fc0;
+        }
+    }
+}
+@keyframes InLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes InRight {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}

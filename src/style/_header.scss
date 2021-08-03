@@ -1,0 +1,37 @@
+.custom-header {
+    width: 100%;
+    background: #f4f4f4;
+    border-bottom: 1px solid #e6e8ec;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1120px;
+        width: 100%;
+        margin: auto;
+        padding: 15px 0px;
+        .avartar {
+            img {
+                max-width: 200px;
+                height: auto;
+            }
+        }
+        .nav_item {
+            margin: auto;
+            text-decoration: none;
+            color: #777e90;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .nav_item:hover {
+            color: #d61c62;
+            transition: color 0.2s ease-in-out;
+        }
+        .nav_item:active {
+            color: #018ae0;
+            transition: color 0.1s ease-in-out;
+        }
+        .nav_item.current {
+            color: #d61c62;
+        }
+    }
+}
