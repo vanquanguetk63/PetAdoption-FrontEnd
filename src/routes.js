@@ -6,36 +6,36 @@ import Home from "./pages/Home/Home";
 import Volunteer from "./pages/Volunteer/Volunteer";
 
 const routes = [
-    {
-        path: "/",
-        exact: true,
-        main: () => <Home/>
-    },
-    {
-        path: "/adopt",
-        exact: true,
-        main: () => <Adopt/>
-    },
-    {
-        path: "/contact",
-        exact: true,
-        main: () => <Contact/>
-    },
-    {
-        path: "/donate",
-        exact: true,
-        main: () => <Donate/>
-    },
-    {
-        path: "/volunteer",
-        exact: true,
-        main: () => <Volunteer/>
-    },
-    {
-        path: "/about-us",
-        exact: true,
-        main: () => <AboutUs/>
-    },
-]
+  {
+    path: "/",
+    exact: true,
+    main: () => <Home />,
+  },
+  {
+    path: "/adopt",
+    exact: true,
+    main: () => <Adopt />,
+  },
+  {
+    path: "/contact",
+    exact: true,
+    main: () => <Contact />,
+  },
+  {
+    path: "/donate",
+    exact: true,
+    main: () => <Donate />,
+  },
+  {
+    path: "/volunteer",
+    exact: true,
+    main: () => <Volunteer />,
+  },
+  {
+    path: "/about-us",
+    exact: true,
+    main: () => <AboutUs />,
+  },
+];
 
-export default routes
+export default routes;
