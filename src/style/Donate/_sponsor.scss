@@ -1,0 +1,136 @@
+.sponsor {
+    background: #f4f4f4;
+    width: 100%;
+    padding: 50px 0px;
+    .container {
+        max-width: 1120px;
+        width: 100%;
+        margin: auto;
+        .sponsor-title {
+            text-align: center;
+            font-size: 2.125rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            i {
+                font-family: "Fontawesome";
+                color: #018ae0;
+                content: "";
+                z-index: 0;
+                font-size: 20px;
+                z-index: 0;
+                transform: rotate(20deg);
+                opacity: 0.5;
+                display: block;
+            }
+        }
+        .sponsor-list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 50px;
+            margin-top: 30px;
+            animation-name: InDown;
+            animation-duration: 1s;
+            .sponcer-item {
+                background: #ddd;
+                text-align: center;
+                border-radius: 20px;
+                padding-bottom: 30px;
+                .item-img {
+                    margin-bottom: 20px;
+                    width: 100%;
+                    position: relative;
+                    padding-top: 100%;
+                    height: auto;
+                    display: inline-block;
+                    overflow: hidden;
+                    img {
+                        position: absolute;
+                        object-fit: cover;
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px;
+                    }
+                    .item-description {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        height: 100%;
+                        text-align: left;
+                        color: #f4f4f4;
+                        padding: 10px;
+                        font-weight: 500;
+                        border-radius: 20px;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex !important;
+                        background: #018ae0;
+                        border-radius: 20px;
+                        display: block;
+                        transform: translateY(-100%);
+                        transition: 0.3s linear;
+                    }
+                }
+                .item-name {
+                    color: #222;
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin: 0px;
+                }
+                .space {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    .space-item {
+                        margin-top: 5px;
+                        content: " ";
+                        display: block;
+                        width: 20px;
+                        margin: 10px 0px;
+                        height: 1px;
+                        background: #d61c62;
+                        display: block;
+                        transition: 0.3s ease-in-out;
+                    }
+                    .icon-dog {
+                        width: 40px;
+
+                        i {
+                            font-family: "Fontawesome";
+                            color: #d61c62;
+                        }
+                    }
+                }
+            }
+            .sponcer-item:hover {
+                .space-item {
+                    width: 40px;
+                }
+                .item-img {
+                    .item-description {
+                        transform: translateY(0%);
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes InDown {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

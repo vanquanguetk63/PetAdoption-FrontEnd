@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap");
+
 @import "~bootstrap/scss/bootstrap";
 //Utility
 @import "./reset";
@@ -13,6 +14,14 @@
 @import "./Home/donate_now";
 @import "./Home/Infor/infor";
 @import "./Home/Infor/information";
+@import "./Home/Infor/owl_stage";
 
 //donate
 @import "./Donate/donater_list";
+@import "./Donate/donate_infor";
+@import "./Donate/donate_information";
+@import "./Donate/sponsor";
+@import "./Donate/donate_other";
+
+//adopt
+@import "./Adopt/adopt_information";
