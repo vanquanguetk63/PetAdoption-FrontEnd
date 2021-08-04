@@ -1,8 +1,5 @@
 import React from "react";
 import avartar from "../../asset/avartar.png";
-import facebook from "../../asset/facebook.svg";
-import youtube from "../../asset/youtube.svg";
-import instagram from "../../asset/instagram.svg";
 
 export default function Logo() {
     return (
