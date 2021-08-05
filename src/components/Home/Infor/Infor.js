@@ -31,7 +31,9 @@ export default function Infor() {
                     <button className="home-infor-button">Về chúng tôi</button>
                 </a>
             </div>
-            <div className="home-infor-img"><img src="https://hanoipetadoption.com/admin/user-content/ca35ac07-24b7-4e83-bddd-866a6a450365.jpg" /></div>
+            <div className="home-infor-img">
+                <img src="https://hanoipetadoption.com/admin/user-content/ca35ac07-24b7-4e83-bddd-866a6a450365.jpg" />
+            </div>
         </div>
     );
 }

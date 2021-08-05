@@ -1,0 +1,94 @@
+.donate-other {
+    background: #fff;
+    background-image: url(https://hanoipetadoption.com/Images/patterns/pattern1.png);
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    width: 100%;
+    padding: 50px 0px;
+    .container {
+        max-width: 1120px;
+        width: 100%;
+        margin: auto;
+        .donate-other-title {
+            text-align: center;
+            font-size: 2.125rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            i {
+                font-family: "Fontawesome";
+                color: #018ae0;
+                content: "";
+                z-index: 0;
+                font-size: 20px;
+                z-index: 0;
+                transform: rotate(20deg);
+                opacity: 0.5;
+                display: block;
+            }
+        }
+        a {
+            text-decoration: none;
+            .donate-other-button {
+                display: block;
+                margin: auto;
+                transition: all 0.2s ease-in-out;
+                color: #fff !important;
+                border: 0;
+                font-size: 1rem;
+                padding: 10px 50px;
+                outline: none;
+                letter-spacing: 0.2px;
+                font-family: "Montserrat", sans-serif;
+                border-radius: 25px;
+                text-transform: uppercase;
+                margin-top: 15px;
+                white-space: normal;
+                font-weight: bold;
+                background: #018ae0;
+            }
+            .donate-other-button:hover {
+                background: #fc0;
+            }
+        }
+        .donate-other-list {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0px;
+            .list-item {
+                width: 25%;
+                height: auto;
+                .item-icon {
+                    display: block;
+                    margin: auto;
+                    width: 110px;
+                    height: 110px;
+                    border: 2px solid;
+                    line-height: 106px;
+                    text-align: center;
+                    font-size: 60px;
+                    transition: all 0.3s ease-in-out;
+                    border-radius: 50%;
+                    border-color: #d61c62;
+                    img {
+                        margin-bottom: 10px;
+                    }
+                }
+                .item-icon:hover{
+                    transform: rotate(20deg);
+                    transition: 0.4s;
+                }
+                .item-content {
+                    margin-top: 20px;
+                    text-align: center;
+                    .text {
+                        text-transform: capitalize!important;
+                        color: #222;
+                        font-size: 1.3125rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

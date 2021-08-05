@@ -1,6 +1,7 @@
 import React from "react";
 import { Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
+import Sponsor from "../../components/Donate/Sponsor/Sponsor";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import DonateNow from "../../components/Home/DonateNow";
@@ -12,6 +13,7 @@ const Home = () => {
             <Row>
                 <Header />
                 <Information />
+                <Sponsor />
                 <DonateNow />
                 <Footer />
             </Row>
