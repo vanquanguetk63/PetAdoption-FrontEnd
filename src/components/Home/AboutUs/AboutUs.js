@@ -4,6 +4,7 @@ import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
 import DonateNow from "../DonateNow";
 import AboutInformation from "./AboutInformation";
+import AboutUsList from "./AboutUsList";
 
 export default function AboutUs() {
     return (
@@ -11,6 +12,7 @@ export default function AboutUs() {
             <Row>
                 <Header />
                 <AboutInformation />
+                <AboutUsList />
                 <DonateNow />
                 <Footer />
             </Row>

@@ -6,7 +6,7 @@ export default function DonateNow() {
         <section className="donate-now overlay">
             <Container>
                 <h4 className="text-donate">Bạn đã sẵn sàng giúp đỡ?</h4>
-                <a href="/about-us">
+                <a href="/donate">
                     <button className="button-donate">Ủng hộ ngay</button>
                 </a>
             </Container>

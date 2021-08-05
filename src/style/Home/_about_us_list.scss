@@ -1,0 +1,121 @@
+.about-list {
+    background: #f4f4f4;
+    width: 100%;
+    padding: 50px 0px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 1120px;
+        width: 100%;
+        margin: auto;
+        padding: 0px;
+        .about-us-title {
+            text-align: center;
+            font-size: 2.125rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            animation-name: InDown;
+            animation-duration: 1.5s;
+            i {
+                font-family: "Fontawesome";
+                color: #018ae0;
+                content: "";
+                z-index: 0;
+                font-size: 20px;
+                z-index: 0;
+                transform: rotate(20deg);
+                opacity: 0.5;
+                display: block;
+            }
+        }
+        .item-listt {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+            .us-item {
+                width: 100%;
+                animation-name: rotateItem;
+                transition-timing-function: ease;
+                animation-duration: 1.5s;
+                .item-image {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    padding-top: 100%;
+                    display: inline-block;
+                    overflow: hidden;
+                    img {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                        transition: 0.6s ease-in-out;
+                        border-radius: 10px;
+                    }
+                }
+                .item-name {
+                    height: 25px;
+                    margin-top: 10px;
+                    color: #222;
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 1.3125rem;
+                    font-weight: 600;
+                }
+                .item-position {
+                    height: 19px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                    color: #018ae0;
+                }
+                .item-space {
+                    margin-top: 5px;
+                    content: " ";
+                    display: block;
+                    width: 60px;
+                    margin: 10px 0px;
+                    border: 1px solid #cecece;
+                }
+                .item-discription {
+                    color: #6b7284;
+                    font-size: 1rem;
+                    line-height: 1.6;
+                    font-weight: 400;
+                    display: block;
+                    margin-block-start: 1em;
+                    margin-block-end: 1em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                }
+            }
+            .us-item:hover {
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+@keyframes rotateItem {
+    from {
+        transform: perspective(2500px) rotateY(-100deg);
+    }
+    to {
+        transform: perspective(2500px) rotateY(0);
+    }
+}
+@keyframes InDown {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
