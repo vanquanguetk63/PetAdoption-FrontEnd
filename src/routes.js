@@ -1,4 +1,4 @@
-import AboutUs from "./components/Home/AboutUs";
+import AboutUs from "./components/Home/AboutUs/AboutUs";
 import Adopt from "./pages/Adopt/Adopt";
 import Contact from "./pages/Contact/Contact";
 import Donate from "./pages/Donate/Donate";
