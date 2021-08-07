@@ -1,0 +1,52 @@
+.bank-infor {
+    .title {
+        color: #222222;
+        font-size: 2.125rem;
+        font-weight: 600;
+        line-height: 1.1;
+        text-transform: capitalize !important;
+        margin-bottom: 20px;
+        .description {
+            color: #6b7284;
+            font-size: 1rem;
+            line-height: 1.6;
+            font-weight: 450;
+            display: block;
+        }
+    }
+    .bank-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        .bank-item {
+            .bank-name {
+                color: #6f6f6f;
+                font-size: 16px;
+                line-height: 1.6;
+                font-weight: bolder;
+                i {
+                    content: "";
+                    color: #d61c62;
+                    margin-right: 8px;
+                    width: 20px;
+                    font-weight: 900;
+                    font-size: 18px;
+                    -webkit-font-smoothing: antialiased;
+                    display: inline-block;
+                    font-style: normal;
+                    font-variant: normal;
+                    text-rendering: auto;
+                    line-height: 1;
+                    font-family: "FontAwesome";
+                }
+            }
+            .bank-acount {
+                color: #6b7284;
+                font-size: 1rem;
+                line-height: 1.6;
+                font-weight: 450;
+                display: block;
+            }
+        }
+    }
+}
