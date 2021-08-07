@@ -1,5 +1,6 @@
 import AboutUs from "./components/Home/AboutUs/AboutUs";
 import Adopt from "./pages/Adopt/Adopt";
+import Animal from "./pages/Animal/Animal";
 import Contact from "./pages/Contact/Contact";
 import Donate from "./pages/Donate/Donate";
 import Home from "./pages/Home/Home";
@@ -35,6 +36,11 @@ const routes = [
     path: "/about-us",
     exact: true,
     main: () => <AboutUs />,
+  },
+  {
+    path: "/animal/:id",
+    exact: true,
+    main: () => <Animal />,
   },
 ];
 
