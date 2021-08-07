@@ -1,0 +1,54 @@
+.animal {
+  background-image: url(https://hanoipetadoption.com/Images/patterns/pattern2.png);
+  background-repeat: repeat;
+  padding: 0px 20px;
+  .adopt-image {
+    overflow: hidden;
+    :hover {
+      transform: scale(1.5);
+      transition: all ease-in-out 0.5s;
+    }
+    a {
+      cursor: pointer;
+    }
+  }
+  .caption-adoption {
+    .small-divider {
+      content: " ";
+      display: block;
+      width: 60px;
+      margin: 10px auto;
+      border: 1px solid #cecece;
+      -moz-border-radius: 4px;
+      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    }
+    .left {
+      margin-left: 0;
+    }
+    .list-unstyled {
+      li {
+        border-bottom: 1px dashed #cecece;
+        padding: 5px 0;
+        color: #222;
+      }
+    }
+    .adoption-header {
+      .text-capitalize {
+        text-transform: capitalize !important;
+      }
+    }
+  }
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+h5 {
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3125rem;
+  font-weight: 600;
+}
