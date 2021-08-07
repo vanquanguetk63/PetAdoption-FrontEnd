@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Footer from "../../components/Footer/Footer";
@@ -8,6 +8,9 @@ import VolunteerInformation from "../../components/Volunteer/Information.js/Volu
 import VolunteerOption from "../../components/Volunteer/Volunter_Option/VolunteerOption";
 
 const Volunteer = () => {
+    useEffect(() => {
+        document.title = "Tình nguyện viên";
+    });
     return (
         <Container fluid>
             <Row>

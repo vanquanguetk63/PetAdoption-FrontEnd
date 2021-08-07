@@ -1,16 +1,9 @@
 import axios from "axios";
 import { message } from "antd";
-const getFullUrl = (url) => {
-    if (!url.startsWith("/")) url = "/" + url;
-    return `${process.env.REACT_APP_PUBLIC_API_URL}` + url;
-};
-
 export const api = {
     get: (api, params) => {
-        const fullApiUrl = getFullUrl(api);
-        console.log(fullApiUrl);
         return axios
-            .get(fullApiUrl, {
+            .get(api, {
                 params: params,
             })
             .then(function (response) {
@@ -29,10 +22,8 @@ export const api = {
             });
     },
     post: (api, params) => {
-        const fullApiUrl = getFullUrl(api);
-        console.log(fullApiUrl);
         return axios
-            .get(fullApiUrl, {
+            .get(api, {
                 params: params,
             })
             .then(function (response) {
@@ -51,10 +42,8 @@ export const api = {
             });
     },
     put: (api, params) => {
-        const fullApiUrl = getFullUrl(api);
-        console.log(fullApiUrl);
         return axios
-            .get(fullApiUrl, {
+            .get(api, {
                 params: params,
             })
             .then(function (response) {
@@ -73,10 +62,8 @@ export const api = {
             });
     },
     delete: (api, params) => {
-        const fullApiUrl = getFullUrl(api);
-        console.log(fullApiUrl);
         return axios
-            .get(fullApiUrl, {
+            .get(api, {
                 params: params,
             })
             .then(function (response) {
