@@ -39,7 +39,7 @@ const Animal = ({ props }) => {
           <ul className="list-unstyled adopt-card p-0 m-0 pb-3">
             <li style={{ height: 36 }}>
               <strong>Giới tính:</strong>{" "}
-              {props.sex === "female" ? "Nữ" : "Nam"}
+              {props.sex === "female" ? "Cái" : "Đực"}
             </li>
             <li style={{ height: 36 }}>
               <strong>Tuổi:</strong> {props.age}
