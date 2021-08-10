@@ -47,14 +47,12 @@ export default function Feedback() {
     const handleClickButton = () => {
         checkparam();
         if (check) {
-            useEffect(() => {
-                api.post(url, {
+                api.post("https://pure-earth-99144.herokuapp.com/api/feedback", {
                     name: name,
                     email: email,
                     title: title,
                     content: content
                 })
-            },[])
             setName("");
             setTitle("");
             setEmail("");
