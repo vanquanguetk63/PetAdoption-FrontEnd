@@ -1,9 +1,11 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Animal from "../Animal/Animal";
+import axios from "axios";
 
 const AnimalList = () => {
   const [indexItem, setIndexItem] = useState(0);
+  const [listAnimal, setListAnimal] = useState([]);
 
   const onNextItem = () => {
     if (indexItem < 3) {
@@ -16,6 +18,17 @@ const AnimalList = () => {
       setIndexItem((indexItem) => indexItem - 1);
     }
   };
+
+  useEffect(() => {
+    axios
+      .get("https://pure-earth-99144.herokuapp.com/api/pet")
+      .then((response) => {
+        setListAnimal(response.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
 
   const transformAnimation = useMemo(
     () => ({
@@ -40,15 +53,17 @@ const AnimalList = () => {
         <div className="animal-stage-outer">
           <div className="animal-stage w-100 h-100">
             <div className="animal-stage-content h-100">
-              {[...Array(7)].map((index) => (
-                <div
-                  className="animal-stage-card"
-                  style={transformAnimation}
-                  key={index}
-                >
-                  <Animal />
-                </div>
-              ))}
+              {listAnimal
+                ? listAnimal.slice(0, 7).map((object) => (
+                    <div
+                      className="animal-stage-card"
+                      style={transformAnimation}
+                      key={object._id}
+                    >
+                      <Animal props={object} />
+                    </div>
+                  ))
+                : null}
             </div>
           </div>
           <div class="animal-nav h-100 w-100">
@@ -67,7 +82,9 @@ const AnimalList = () => {
           </div>
         </div>
         <div className="d-flex justify-content-center mt-3">
-          <a href="/adopt"><button className="animal-infor-button">Nhận nuôi</button></a>
+          <a href="/adopt">
+            <button className="animal-infor-button">Nhận nuôi</button>
+          </a>
         </div>
       </div>
     </Container>
