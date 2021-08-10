@@ -39,7 +39,8 @@ export default function DetailItem() {
               <strong>Màu sắc:</strong> {infor ? infor.breed : ""}
             </li>
             <li>
-              <strong>Tuổi : </strong> {infor ? infor.age : ""}
+              <strong>Tuổi : </strong>{" "}
+              {infor ? infor.age === "young" : "Trẻ" ? "Trưởng thành" : ""}
             </li>
             <li>
               <strong>Cân nặng:</strong> {infor ? infor.weight : ""}
