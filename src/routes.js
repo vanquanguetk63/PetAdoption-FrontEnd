@@ -1,4 +1,5 @@
 import AllAnimal from "./components/Adopt/AllAnimal.js/AllAnimal";
+import Detail from "./components/Detail/Detail";
 import AboutUs from "./components/Home/AboutUs/AboutUs";
 import Adopt from "./pages/Adopt/Adopt";
 import Animal from "./pages/Animal/Animal";
@@ -41,7 +42,7 @@ const routes = [
   {
     path: "/animal/:id",
     exact: true,
-    main: () => <Animal />,
+    main: () => <Detail />,
   },
   {
     path: "/all-animal",
