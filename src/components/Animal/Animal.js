@@ -1,13 +1,12 @@
 import React from "react";
 
 const Animal = ({ props }) => {
-  console.log("1..", props);
   return (
     <div className="animal h-100 w-100 bg-light">
       <div className="col-12 p-0">
         <div className="adopt-image d-flex flex-wrap align-items-center">
           <a
-            href="https://hanoipetadoption.com/vi/thu-cung/sasin-21055"
+            href={`/animal/${props.petCode}`}
             aria-label="Sasin"
             aria-labelledby="Sasin"
             className="w-100"
