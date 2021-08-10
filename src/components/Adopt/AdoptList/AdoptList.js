@@ -54,7 +54,7 @@ export default function AdoptList() {
                   setPage((page) => page - 1);
                 }}
               >
-                <a class="page-link">Previous</a>
+                <a class="page-link">Trước</a>
               </li>
               {[...Array(numPage)].map((object, index) => (
                 <li
@@ -72,7 +72,7 @@ export default function AdoptList() {
                   setPage((page) => page + 1);
                 }}
               >
-                <a class="page-link">Next</a>
+                <a class="page-link">Sau</a>
               </li>
             </ul>
           </nav>
