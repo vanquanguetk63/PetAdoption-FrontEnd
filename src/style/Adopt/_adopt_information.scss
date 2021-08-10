@@ -1,90 +1,98 @@
 .adopt-information {
-    background: #fff;
+  background: #fff;
+  width: 100%;
+  padding: 50px 0px;
+  .container {
+    max-width: 1120px;
     width: 100%;
-    padding: 50px 0px;
-    .container {
-        max-width: 1120px;
-        width: 100%;
-        margin: auto;
-        .adopt-infor {
-            display: grid;
-            grid-template-columns: 0.7fr 0.3fr;
-            grid-gap: 20px;
-            flex-direction: row;
-            animation-name: InRight;
-            animation-duration: 1s;
-            .adopt-infor-content {
-                .adopt-infor-title {
-                    font-size: 2.125rem;
-                    color: #222;
-                    font-weight: 600;
-                    line-height: 1.1;
-                }
-                .space {
-                    margin-top: 5px;
-                    content: " ";
-                    display: block;
-                    width: 120px;
-                    margin: 10px 0px;
-                    border: 1px solid #cecece;
-                }
-                .adopt-infor-descript {
-                    color: #6b7284;
-                    font-size: 1rem;
-                    line-height: 1.6;
-                    font-weight: 400;
-                    display: block;
-                    margin-block-start: 1em;
-                    margin-block-end: 1em;
-                    margin-inline-start: 0px;
-                    margin-inline-end: 0px;
-                }
-                .item {
-                    font-weight: bold;
-                }
-            }
-            .adopt-infor-condition {
-                background-color: #f6f6f6 !important;
-                display: block;
-                border: 0;
-                border-radius: 15px;
-                padding: 20px;
-                height: fit-content;
-                .condition-title {
-                    color: #222;
-                    font-size: 1.3125rem;
-                    font-weight: 600;
-                    text-transform: capitalize !important;
-                    margin-bottom: 15px;
-                }
-                .condition-item {
-                    margin: 10px 0px;
-                    i {
-                        font-family: "Fontawesome";
-                        color: #018ae0;
-                        content: "";
-                        z-index: 0;
-                        font-size: 17px;
-                        margin-right: 10px;
-                    }
-                    .item-text {
-                        color: #6b7284;
-                        font-weight: 700 !important;
-                        font-size: 16px;
-                        line-height: 26px;
-                    }
-                }
-            }
+    margin: auto;
+    .adopt-infor {
+      display: grid;
+      grid-template-columns: 0.7fr 0.3fr;
+      grid-gap: 20px;
+      flex-direction: row;
+      animation-name: InRight;
+      animation-duration: 1s;
+      .adopt-infor-content {
+        .adopt-infor-title {
+          font-size: 2.125rem;
+          color: #222;
+          font-weight: 600;
+          line-height: 1.1;
         }
+        .space {
+          margin-top: 5px;
+          content: " ";
+          display: block;
+          width: 120px;
+          margin: 10px 0px;
+          border: 1px solid #cecece;
+        }
+        .adopt-infor-descript {
+          color: #6b7284;
+          font-size: 1rem;
+          line-height: 1.6;
+          font-weight: 400;
+          display: block;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+        }
+        .item {
+          font-weight: bold;
+        }
+      }
+      .adopt-infor-condition {
+        background-color: #f6f6f6 !important;
+        display: block;
+        border: 0;
+        border-radius: 15px;
+        padding: 20px;
+        height: fit-content;
+        .condition-title {
+          color: #222;
+          font-size: 1.3125rem;
+          font-weight: 600;
+          text-transform: capitalize !important;
+          margin-bottom: 15px;
+        }
+        .condition-item {
+          margin: 10px 0px;
+          i {
+            font-family: "Fontawesome";
+            color: #018ae0;
+            content: "";
+            z-index: 0;
+            font-size: 17px;
+            margin-right: 10px;
+          }
+          .item-text {
+            color: #6b7284;
+            font-weight: 700 !important;
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
     }
+  }
 }
 @keyframes InRight {
-    from {
-        opacity: 0;
-        transform: translateX(50%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0%);
-    }
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.adopt-card {
+  li {
+    border-bottom: 1px dashed #cecece;
+    padding: 5px 0;
+    color: #222;
+  }
 }
