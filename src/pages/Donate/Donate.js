@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Row } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
+import AnimalList from "../../components/AnimalList/AnimalList";
 import DonateOther from "../../components/Donate/DonateOther/DonateOther";
 import DonaterList from "../../components/Donate/DonaterList";
 import DonateInformation from "../../components/Donate/Information/DonateInformation";
@@ -19,6 +20,7 @@ const Donate = () => {
                 <DonateInformation />
                 <Sponsor/>
                 <DonateOther />
+                <AnimalList />
                 <DonaterList />
                 <Footer />
             </Row>

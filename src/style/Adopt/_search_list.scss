@@ -1,0 +1,20 @@
+.search-list{
+    .search-title {
+        text-align: center;
+        font-size: 2.125rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        i {
+            font-family: "Fontawesome";
+            color: #018ae0;
+            content: "";
+            z-index: 0;
+            font-size: 20px;
+            z-index: 0;
+            transform: rotate(20deg);
+            opacity: 0.5;
+            display: block;
+        }
+    }
+}

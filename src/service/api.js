@@ -7,9 +7,7 @@ export const api = {
                 params: params,
             })
             .then(function (response) {
-                console.log(response.status, response.statusText);
-                console.log(response.data.data.records);
-                return response.data.data.records;
+                return response.data;
             })
             .catch((error) => {
                 if (error.response) {
@@ -23,62 +21,10 @@ export const api = {
     },
     post: (api, params) => {
         return axios
-            .get(api, {
+            .post(api, {
                 params: params,
             })
-            .then(function (response) {
-                console.log(response.status, response.statusText);
-                console.log(response.data.data.records);
-                return response.data.data.records;
-            })
-            .catch((error) => {
-                if (error.response) {
-                    message.error(error.message);
-                } else if (error.request) {
-                    message.error(error.message);
-                } else {
-                    message.error(error.message);
-                }
-            });
+            
     },
-    put: (api, params) => {
-        return axios
-            .get(api, {
-                params: params,
-            })
-            .then(function (response) {
-                console.log(response.status, response.statusText);
-                console.log(response.data.data.records);
-                return response.data.data.records;
-            })
-            .catch((error) => {
-                if (error.response) {
-                    message.error(error.message);
-                } else if (error.request) {
-                    message.error(error.message);
-                } else {
-                    message.error(error.message);
-                }
-            });
-    },
-    delete: (api, params) => {
-        return axios
-            .get(api, {
-                params: params,
-            })
-            .then(function (response) {
-                console.log(response.status, response.statusText);
-                console.log(response.data.data.records);
-                return response.data.data.records;
-            })
-            .catch((error) => {
-                if (error.response) {
-                    message.error(error.message);
-                } else if (error.request) {
-                    message.error(error.message);
-                } else {
-                    message.error(error.message);
-                }
-            });
-    },
+    
 };
