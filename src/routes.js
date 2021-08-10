@@ -1,3 +1,4 @@
+import AllAnimal from "./components/Adopt/AllAnimal.js/AllAnimal";
 import AboutUs from "./components/Home/AboutUs/AboutUs";
 import Adopt from "./pages/Adopt/Adopt";
 import Animal from "./pages/Animal/Animal";
@@ -42,6 +43,12 @@ const routes = [
     exact: true,
     main: () => <Animal />,
   },
+  {
+    path: "/all-animal",
+    exact: true,
+    main: () => <AllAnimal />,
+  },
+
 ];
 
 export default routes;

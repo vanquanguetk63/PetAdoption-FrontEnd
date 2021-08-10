@@ -67,7 +67,7 @@ const AnimalList = () => {
           </div>
         </div>
         <div className="d-flex justify-content-center mt-3">
-          <button className="animal-infor-button">Về chúng tôi</button>
+          <a href="/adopt"><button className="animal-infor-button">Nhận nuôi</button></a>
         </div>
       </div>
     </Container>

@@ -10,7 +10,7 @@ import Information from "../../components/Home/Infor/Information";
 
 const Home = () => {
     useEffect(() => {
-        document.title = "Trang chủ";
+        document.title = "Pet Adoption - Trang nhận nuôi thú cưng";
     });
     return (
         <Container fluid>
