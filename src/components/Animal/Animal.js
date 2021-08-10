@@ -1,13 +1,12 @@
 import React from "react";
 
 const Animal = ({ props }) => {
-  console.log("1..", props);
   return (
     <div className="animal h-100 w-100 bg-light">
       <div className="col-12 p-0">
         <div className="adopt-image d-flex flex-wrap align-items-center">
           <a
-            href={`/animal/:${props.petCode}`}
+            href={`/animal/${props.petCode}`}
             aria-label="Sasin"
             aria-labelledby="Sasin"
             className="w-100"
@@ -40,7 +39,7 @@ const Animal = ({ props }) => {
           <ul className="list-unstyled adopt-card p-0 m-0 pb-3">
             <li style={{ height: 36 }}>
               <strong>Giới tính:</strong>{" "}
-              {props.sex === "female" ? "Nữ" : "Nam"}
+              {props.sex === "female" ? "Cái" : "Đực"}
             </li>
             <li style={{ height: 36 }}>
               <strong>Tuổi:</strong> {props.age}

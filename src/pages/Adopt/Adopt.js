@@ -9,21 +9,21 @@ import Header from "../../components/Header/Header";
 import DonateNow from "../../components/Home/DonateNow";
 
 const Adopt = () => {
-    useEffect(() => {
-        document.title="Nhận nuôi";
-    })
-    return (
-        <Container fluid>
-            <Row>
-                <Header />
-                <AdoptInformation />
-                <ToAllAnimal />
-                <AdoptList />
-                <DonateNow />
-                <Footer />
-            </Row>
-        </Container>
-    );
+  useEffect(() => {
+    document.title = "Nhận nuôi";
+  });
+  return (
+    <Container fluid>
+      <Row>
+        <Header />
+        <AdoptInformation />
+        <ToAllAnimal />
+        <AdoptList />
+        <DonateNow />
+        <Footer />
+      </Row>
+    </Container>
+  );
 };
 
 export default Adopt;
