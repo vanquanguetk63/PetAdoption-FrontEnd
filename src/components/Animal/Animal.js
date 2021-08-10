@@ -42,7 +42,8 @@ const Animal = ({ props }) => {
               {props.sex === "female" ? "Cái" : "Đực"}
             </li>
             <li style={{ height: 36 }}>
-              <strong>Tuổi:</strong> {props.age}
+              <strong>Tuổi:</strong>{" "}
+              {props.age === "young" ? "Trẻ" : "Trưởng thành"}
             </li>
             <li style={{ height: 36 }}>
               <strong>Tiêm phòng:</strong>{" "}
