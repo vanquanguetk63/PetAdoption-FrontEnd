@@ -47,14 +47,14 @@ export default function Feedback() {
     const handleClickButton = () => {
         checkparam();
         if (check) {
-            // useEffect(() => {
-            //     api.post(url, {
-            //         name: name,
-            //         email: email,
-            //         title: title,
-            //         content: content
-            //     })
-            // },[])
+            useEffect(() => {
+                api.post(url, {
+                    name: name,
+                    email: email,
+                    title: title,
+                    content: content
+                })
+            },[])
             setName("");
             setTitle("");
             setEmail("");
