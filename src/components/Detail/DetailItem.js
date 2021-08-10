@@ -54,6 +54,21 @@ export default function DetailItem() {
           </ul>
         </div>
       </Row>
+      <Row>
+        <div class="pt-4" style={{ marginLeft: 15 }}>
+          <h3 class="text-capitalize">Tìm hiểu về thú cưng</h3>
+          <hr
+            class="small-divider left"
+            style={{
+              width: "120px",
+              margin: "10px auto",
+              border: "1px solid #cecece",
+              marginLeft: 0,
+            }}
+          />
+          {infor ? infor.description : ""}
+        </div>
+      </Row>
     </Container>
   );
 }
